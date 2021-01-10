@@ -1,36 +1,105 @@
-html, body {
+html, 
+
+body {
+	
+	min-height: 10vh;
+	background: linear-gradient(139deg,#03ddffcb 0%, #ff0381b6 90%);
 	width: 50%;
 	margin: 0 auto;
-	font-family: Arial;
+	font-family: 'Poppins', sans-serif;
+	
 }
 
+
 .container{
-	width: 360px;
+	 padding: 10px;
+  	width: 125%;
+ 	background: #d9d9d9;
+  	color: #555;
+  	float: left;
+  	text-align: center;
+  	font-size: 16px;
+  	cursor: pointer;
+  	transition: 0.3s;
+  
 }
 
 #inputField {
-	width: 300px;
-	height: 46px;
+	width: 200px;
+	height: 30px;
 	border: 1px solid black;
 	outline: none;
-	font-size: 25px;
+	font-size: 15px;
 	vertical-align: middle;
 }
 
 #addToDo{
-	height: 50px;
-	width:50px;
-	border: 1px solid black;
-	font-size: 25px;
+	height: 30px;
+	width:70px;
+	border: 2px solid black;
+	font-size: 20px;
 	vertical-align: middle;
+	cursor: pointer;
+  	transition: 0.3s;
+ 	border-radius: 0;
+ 	color: #555;
+ 	background: #d9d9d9;
 }
 
+#addToDo:hover{
+	background-color: #bbb;
+}
+
+
 .to-dos{
-	margin-top: 25px;
+
+	margin-top: 20px;
+	border:25px;
 }
 
 .paragraph-styling{
 	margin: 0;
 	cursor: pointer;
 	font-size: 20px;
+	border:25px;
 }
+
+.list
+{
+	margin: 90;
+	position: relative;
+	background: #fff;
+	width: 250px;
+}
+
+.list h2
+{
+	background: #FFB6C1;
+	color: #fff;
+	padding: 10px 20px;
+	margin:0px;
+	font-weight:600;
+	width: 292px;
+
+}
+
+
+div:nth-child(odd) {
+  background: #f9f9f9;
+  border: 25px;
+}
+
+
+div.clicked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
